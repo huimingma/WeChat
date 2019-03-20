@@ -1,0 +1,59 @@
+  <view class="numberInfo">
+ ** 信息录入</view>
+
+<view class="container">
+
+  <view class="lineHeight" >手机号
+     <input class='input' placeholder='请输入手机号' bindblur='userPhone' value='{{userPhone}}' type="number"></input>
+  </view>
+    <view class="lineHeight" >姓名
+     <input class='input-15' placeholder='姓名' bindblur='userName' value='{{userName}}' type="text"></input>
+  </view>
+  <view class="lineHeight" >公司名称
+     <input class='input-7' placeholder='公司名称' bindblur='userComp' value='{{userComp}}' type="text"></input>
+  </view>
+  
+  <view class="lineHeight" >
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}"  bindtap='clearFont'>
+            产品/服务 
+            <text class='select ml-40'>{{placeholder}} {{array[index]}}</text>
+    </picker>
+  </view>
+  <view class="lineHeight">
+      <view class="section">
+          <picker
+             mode="region"
+             bindchange="bindRegionChange"
+             value="{{region}}"
+             custom-item="{{customItem}}"
+          >
+            <view class="picker">
+              公司地址 <text class='select'>{{region[0]}}，{{region[1]}}，{{region[2]}}</text>
+            </view>
+         </picker>
+  </view> 
+  </view>
+  <view class="lineHeight" >具体地址
+      <input class='input-7' placeholder='具体地址' bindblur='userAddress' value='{{userAddress}}' type="text"></  input>
+  </view>
+</view>
+
+
+<view class="weui-uploader">
+  <view class="img-v weui-uploader__bd">
+    <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+        <image class='weui-uploader__img ' 
+                src="{{item}}" 
+                data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+                  <icon type='clear' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+    </view>
+    
+      <!-- 用来提示用户上传图片 -->
+      <view class="weui-uploader__input-box pic" bindtap="chooseImg"> </view>
+  </view>
+  <button class="upload-img-btn"  type='primary' bindtap='orderMeeting'>上传</button>
+
+</view>
+
+

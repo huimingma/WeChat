@@ -1,0 +1,23 @@
+/* pages/infoDetail/infoDetail.wxss */
+.lineHeight {
+  width: 100%;
+  line-height: 80rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 30rpx;
+}
+.container {
+  padding: 0;
+  align-items: left;
+  padding-left: 15rpx;
+}
+.numberInfo {
+  font-size:24rpx;
+  text-indent:15rpx;
+  border-bottom:1px solid #ccc;
+  line-height:48rpx;
+}
+.fr{
+  float: right;
+  font-size: blod;
+  padding-right: 15rpx;
+}

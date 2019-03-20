@@ -1,0 +1,40 @@
+<!--pages/showinfo/showinfo.wxml-->
+<view class='showInfo'>
+    <view class='title'>您已经添加的公司</view>
+    <view class='content'  bindtap="modalinput"  wx:for="{{listData}}" wx:key="item.FacilitatorId">
+      <view class='company'>
+        <view class='left fl'>
+          <image src='../../state/img/1.jpg' class='img'></image>
+        </view>
+        <view class='right fr'>
+          <view class='showContent'>
+            <view class='companyName'>{{item.FacilitatorName}}</view>
+            <view class='companyPhone'>电话 ：{{item.Phone}}</view>
+            <view class='companyAddress'>地址 ：{{item.Address}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+   
+    <modal hidden="{{hiddenmodalput}}" confirm-text="修改" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+        <view class="lineHeight" >手机号
+          <input class='ipt' value='{{userPhone}}' type="number" bindblur='userPhone'></input>
+        </view>
+          <view class="lineHeight" >姓名
+            <input class='ipt' placeholder='姓名' value='{{userName}}' type="text" bindblur='userName'></input>
+        </view>
+        <view class="lineHeight" >公司名称
+          <input class='ipt' placeholder='公司名称' value='{{userComp}}' type="text" bindblur='userComp'></input>
+        </view>
+        <view class="lineHeight">公司电话
+          <input class='ipt' type='number' placeholder='公司电话' type='number' value='{{userCompPhone}}' bindblur='userCompPhone'></input>
+        </view>
+        <view class="lineHeight" >分机号码
+            <input class='ipt' placeholder='公司分机号码（选填)' type='number' value='{{userCompExtenNumber}}' bindblur='userCompExtenNumber'></input>
+        </view>
+        <view class="lineHeight">公司地址
+          <input class='ipt' placeholder='请输入公司地址' value='{{userAddress}}' bindblur="userAddress"></input>
+        </view> 
+      <button></button>
+    </modal>
+</view> 

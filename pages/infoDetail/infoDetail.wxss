@@ -1,0 +1,47 @@
+/* pages/infoDetail/infoDetail.wxss */
+.lineHeight {
+  width: 100%;
+  line-height: 80rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 30rpx;
+}
+.container {
+  padding: 0;
+  align-items: left;
+  padding-left: 15rpx;
+}
+.numberInfo {
+  font-size: 24rpx;
+  text-indent: 15rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.input,
+.input-7 ,
+.input-15{
+  margin-left: 7%;
+  display: inline-block;
+  line-height: 80rpx;
+  vertical-align: middle;
+  width: 75%;
+}
+.input{
+  margin-left: 11%;
+}
+
+button {
+  width: 100%;
+  margin-top: 30rpx;
+}
+.select{
+  margin-left: 7%;
+  color: #666;
+}
+
+.input-15{
+  margin-left:15%;
+}
+
+.ml-40{
+  margin-left: 40rpx;
+}

@@ -1,0 +1,44 @@
+
+<view class="numberInfo">** 会员信息</view>
+
+<view class="container">
+  <view class="lineHeight" >手机号
+    <input class='input' placeholder='请输入手机号' type="number" bindblur='userPhone' value='{{userPhone}}'></input>
+  </view>
+    <view class="lineHeight" >姓名
+      <input class='input-15' placeholder='姓名' type='text' bindblur='userName' value='{{userName}}'></input>
+  </view>
+  <view class="lineHeight" >公司名称
+     <input class='input-7' placeholder='公司名称' type='text' bindblur='userComp' value='{{userComp}}'></input>
+  </view>
+  <view class="lineHeight">公司电话
+    <input class='input-7' type='number' placeholder='公司电话' type='digit' bindblur='userCompPhone' value='{{userCompPhone}}'></input>
+  </view>
+  <view class="lineHeight" type='number'>分机号码
+      <input class='input-7' placeholder='公司分机号码（选填）' type='digit' bindblur='userCompExtenNumber' value='{{userCompExtenNumber}}'></input>
+  </view>
+<view class="lineHeight" type="text">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}"  bindtap='clearFont'>
+            产品/服务 
+        <text class='select ml-40' >{{placeholder}} {{array[index]}}</text>
+    </picker>
+  </view>
+  <view class="lineHeight">
+      <view class="section">
+          <picker
+             mode="region"
+             bindchange="bindRegionChange"
+             value="{{region}}"
+             custom-item="{{customItem}}"
+          >
+          <view class="picker">
+               公司地址 <text class='select'>{{region[0]}}，{{region[1]}}，{{region[2]}}</text>
+          </view>
+         </picker>
+  </view> 
+  </view>
+  <view class="lineHeight" >具体地址
+       <input class='input-7' placeholder='具体地址' type='text' bindblur='userAddress' value='{{userAddress}}'></input>
+  </view>
+  <button type='primary' form-type="submit" bindtap='save'>保存</button>
+</view>

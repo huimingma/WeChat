@@ -1,0 +1,47 @@
+/* pages/showinfo/showinfo.wxss */
+.title{
+  text-align: center;
+  color: #666;
+  border-bottom: 1px solid #ccc;
+  line-height: 40px;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.left{
+  width: 30%;
+  height: 200rpx;
+}
+.right{
+  width: 70%;
+  height: 200rpx;
+  font-size: 32rpx;
+}
+.img{
+  width: 180rpx;
+  height: 180rpx;
+  /* background-color: red; */
+  margin: auto;
+  display: block;
+  margin-top: 10rpx;
+}
+.showContent{
+  padding: 10rpx
+}
+.content{
+  overflow: hidden;
+  border-bottom: 1px solid #ccc
+}
+
+/* 模态框的样式 */
+.lineHeight{
+  float: left;
+  width: 100%;
+}
+.ipt{
+  float: right;
+  width: 70%;
+}

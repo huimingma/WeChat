@@ -1,0 +1,15 @@
+.center{
+  text-align: center;
+}
+
+.title{
+  font-size: 26rpx;
+}
+
+.h1{
+  font-size: 30rpx;
+}
+
+.h1-content{
+  font-size: 24rpx;
+}

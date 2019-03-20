@@ -1,0 +1,65 @@
+<!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+<view>
+  <view class='pic'>
+      <open-data type="userAvatarUrl"></open-data>
+  </view>
+
+  <view class='center'>
+        <open-data type="userNickName" class="name"></open-data>
+  </view>
+
+  <view class='auto m2' bindtap="infoDetail">
+    
+    <navigator
+      url='../infoDetail/infoDetail' 
+      hover-class='none' 
+    >
+      <image class="img" src="../../img/zhanghuziliao.png"></image>
+      账户
+      <text class="info">会员信息 ></text>
+    </navigator>
+  </view>
+  <view class='auto'>
+      <navigator 
+      url='../showinfo/showinfo'
+      hover-class="none"
+      >
+          <image class="img" src="../../img/shezhi.png"></image>
+          查看已上传的
+        <text class="info"> > </text>
+    </navigator>
+  </view>  
+  <view class='auto'>
+    <navigator
+      url='../law/law'
+      hover-class='none'
+    >
+     <image class="img" src="../../img/falvshengmingfalv.png"></image>
+    法律条款
+    <text class="info"> > </text>
+     </navigator>
+  </view>
+  <view class='auto'>
+     <image class="img" src="../../img/liuyanjianyi.png"></image>
+    建议留言
+    <text class="info"> > </text>
+  </view>
+
+  <view class='auto mar-bottom-no'>
+    <navigator
+      url='../sm/sm'
+      hover-class='none'
+    >
+        <image class="img" src="../../img/saoma.png"></image>
+        朋友扫码用
+        <text class="info"> > </text>
+    </navigator>
+  </view>
+  
+    <view class='forward'>
+       <image class="img" src="../../img/fenxiang.png"></image>
+       <button  plain="true" open-type="share">分享给朋友</button>
+       <text>></text>
+    </view>
+</view>
+

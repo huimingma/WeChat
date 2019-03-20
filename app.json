@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/map/map",
+    "pages/location/location",
+    "pages/card/card",
+    "pages/my/my",
+    "pages/infoDetail/infoDetail",
+    "pages/showinfo/showinfo",
+    "pages/agreement/agreement",
+    "pages/law/law",
+    "pages/policy/policy",
+    "pages/sm/sm"
+  ],
+  
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3366CC",
+    "navigationBarTitleText": "水点服务",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "backgroundColor": "#3366CC",
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "./state/icon/ditu-1.png",
+        "selectedIconPath": "./state/icon/ditu.png"
+      },
+      {
+        "pagePath": "pages/location/location",
+        "text": "导航",
+        "iconPath": "./state/icon/daohang-1.png",
+        "selectedIconPath": "./state/icon/daohang.png"
+      },
+      {
+        "pagePath": "pages/card/card",
+        "text": "名片夹",
+        "iconPath": "./state/icon/sousuo-1.png",
+        "selectedIconPath": "./state/icon/sousuo.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我",
+        "iconPath": "./state/icon/wode-1.png",
+        "selectedIconPath": "./state/icon/wode.png"
+      }
+    ]
+  }
+}

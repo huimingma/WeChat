@@ -1,0 +1,186 @@
+
+/* 不加page无法全屏 */
+page {
+    height: 100%;
+  }
+   
+  .page-left{
+    width: 100%;
+    display: inline-block
+  }
+  .view {
+    width: 100%;
+    height: 100%;
+  }
+   
+  map {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  
+  .searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.reTextSm{
+  font-size: 23rpx
+}
+
+.reTextLa{
+  font-size:30rpx;
+}
+
+.CovImg{
+  display: flex;
+  background-color: #c18484;
+  margin-bottom: 0rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.img1{
+ 
+  width: 60rpx;
+  height: 60rpx;
+  
+}
+
+.imgView2{
+  margin-left: 85rpx;
+}
+.imgView1{
+  margin-left: 10rpx;
+}
+
+.btnText{
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.pbImg{
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 30rpx;
+}
+
+.cover{
+  position: relative;
+  margin-top: 400px;
+  margin-left: 360px;
+}
+.coverText{
+  position: relative;
+  margin-left: 300px;
+}
+
+.imgView1,.imgView2,.imgView3,.imgView4{
+  width: 25%;
+  text-align: center
+}
+
+
+/* 下拉列表的样式 */
+.nav-son{
+    position: relative;
+    /* 让下拉提示信息永远放于下拉内容的上面 */
+    z-index: 99;
+    /* border-top: 1px solid #d1d3d4;
+    border-bottom: 1px solid #d1d3d4; */
+    background: #fff;
+    display: flex;
+    height: 40px;
+    align-items:center;
+    font-size: 18px;
+}
+/* 下拉列表 下三角的样式 */
+.nav-son image{
+    position: absolute;
+    right: 30rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+ 
+/* 下拉框的样式 */
+.temp{
+    /* 默认为不显示 */
+    display:none;
+    /* 下拉框的宽度， */
+    width: 100%;
+    /* 下拉框的最大高度 */
+    max-height: 750rpx;
+    overflow-y: scroll;
+    /* padding: 0 0 0 20rpx; */
+    line-height:100rpx;
+    background: #fff;
+}
+ 
+/* 下拉框内容的样式 */
+.temp view{
+    border-bottom: 1px solid #d1d3d4;
+    font-size: 14px;
+    color: #666;
+}
+ 
+/* 下拉动画 */
+/* @keyframes Css3 新标签，循环动画 */
+@keyframes slidown{
+    from{
+        transform:  translateY(-100%);
+    }
+    to{
+        transform:  translateY(0%);
+    }
+}
+.slidown{
+    display: block;
+    animation: slidown .2s ease-in both;
+}
+ 
+/* 上拉动画 */
+@keyframes slidup{
+    from{
+        transform:  translateY(0%);
+    }
+    to{
+        transform:  translateY(-100%);
+    }
+}
+
+.slidup{
+    display: block;
+    animation: slidup .2s ease-in both;
+    height: 0px;
+}/* pages/form/form.wxss */
+
+.page-right{
+  display: inline-block;
+  float: right;
+  width: 19%;
+  overflow: hidden;
+  text-align: center;
+  position:absolute;
+  padding-top:8px;
+  z-index: 99999;
+}
+
+.nav-son{
+  height: 60rpx;
+}
+.temp{
+  overflow: hidden;
+  /* height: 60rpx; */
+  line-height: 60rpx;
+}
+.list{
+  margin: auto
+}
+
+.hidden{
+  display: none
+}
