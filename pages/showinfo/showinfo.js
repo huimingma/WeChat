@@ -1,5 +1,7 @@
 //获取应用实例  
 var app = getApp()
+const utils = require('../../utils/util.js')
+
 Page({
   data: {
     userComp: '上海水点网络有限公司',
@@ -26,7 +28,7 @@ Page({
     var cookie = wx.getStorageSync("sessionId")
     console.log(cookie)
     wx.request({
-      url: 'http://101.200.182.221:8001/WeChat/Services/GetServiceFacilitatorManage?page=1&sessionId='+cookie, 
+      url: utils.getRequestUrl +'/WeChat/Services/GetServiceFacilitatorManage?page=1&sessionId='+cookie, 
       method:'POST',
       data: {
         Person:true

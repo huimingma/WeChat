@@ -1,5 +1,6 @@
 //获取应用实例
 const app = getApp()
+const utils = require('../../utils/util.js')
 
 Page({
   data: {
@@ -73,7 +74,7 @@ Page({
           // console.log(UnioId, Name, Country, HeaderImageUrl)
           // 接口
           wx.request({
-            url: 'http://101.200.182.221:8001/Api/Account/WeixinLogin',
+            url: utils.getRequestUrl + '/Api/Account/WeixinLogin',
             data: {
               UnioId: UnioId,
               Name: Name,

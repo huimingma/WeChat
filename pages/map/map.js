@@ -7,7 +7,7 @@ var callout = []
 // 获取应用实例
 var QQMapWX = require('../../utils/qqmap-wx-jssdk.min.js')
 var qqmapsdk
-
+const utils = require('../../utils/util.js')
 
 Page({
   /**
@@ -24,7 +24,7 @@ Page({
   onLoad: function (options) {
     var that = this
     wx.request({
-      url: 'http://101.200.182.221:8001/Api/Services/GetAllServiceFacilitatorMap',
+      url: utils.getRequestUrl + '/Api/Services/GetAllServiceFacilitatorMap',
       data: {},
       method: 'POST',
       header: {
@@ -121,7 +121,7 @@ Page({
     var formData = e.detail.value; //获取表单所有name=id的值  
     console.log(formData)
     wx.request({
-      url: 'http://101.200.182.221:8001/Services/GetAllServiceFacilitatorMap',
+      url: utils.getRequestUrl+'/Services/GetAllServiceFacilitatorMap',
       data: {
         Content: formData || null,
         FacilitatorTypeId: '',

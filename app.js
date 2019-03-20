@@ -38,13 +38,13 @@ App({
   },
 
   // 配置基准路径
-  request(url) {
-    var host = 'http://101.200.182.221:8001/';
-    wx.request({
-      url: host + url,
-      success: function (res) {
-      }
-    });
-  }
+  // request(url) {
+  //   var host = 'http://101.200.182.221:8001/';
+  //   wx.request({
+  //     url: host + url,
+  //     success: function (res) {
+  //     }
+  //   });
+  // }
 // module.exports.request = request;
 })

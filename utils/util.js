@@ -17,3 +17,8 @@ const formatNumber = n => {
 module.exports = {
   formatTime: formatTime
 }
+
+// 配置的基准地址
+module.exports = {
+  getRequestUrl: "http://101.200.182.221:8001/",
+}

@@ -1,4 +1,5 @@
-// pages/upload/upload.js
+const utils = require('../../utils/util.js')
+
 Page({
 
   /**
@@ -201,7 +202,7 @@ Page({
     console.log(cookie)
 
     wx.request({
-      url: 'http://101.200.182.221:8001/WeChat/Services/AddServiceFacilitator?sessionId=' + cookie,
+      url: utils.getRequestUrl + '/WeChat/Services/AddServiceFacilitator?sessionId=' + cookie,
       method: 'POST',
       data: {
         FacilitatorTypeId: index,
@@ -211,10 +212,9 @@ Page({
         Address: userAddress,
         Province: region[0],
         City: region[1],
-        IsNeedCorrection: true,                ImageUrl:'http://tmp/wx0ea2cb5b1381cd83.o6zAJsyqbuaGohURpLqtZoR8ZCno.trwM1Bu363oNf9efb1478cdc1e7497b3bb144da947c7.jpg;http://tmp/wx0ea2cb5b1381cd83.o6zAJsyqbuaGohURpLqtZoR8ZCno.RWJg8lBzBvH978c9fbdc4fc66c419005c987a8ddfc42.jpg'
+        IsNeedCorrection: true             
       },
       header: {
-        
         'content-type': 'application/json' // 默认值
       },
       success(res) {
@@ -225,7 +225,7 @@ Page({
 
     // 图片资源    
     // wx.uploadFile({
-    //   url: 'http://101.200.182.221:8001/WeChat/Services/AddServiceFacilitator?sessionId=' + cookie,
+    //   url: utils.getRequestUrl + '/WeChat/Services/AddServiceFacilitator?sessionId=' + cookie,
     //   filePath: tempFilePaths[0],
     //   name: 'file',
     //   formData: {
